@@ -1,0 +1,30 @@
+{
+  "name": "mochadoc-runner",
+  "version": "1.0.0",
+  "description": "Mochadoc programmatic runner for tool-building",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmstead/mochadoc-runner.git"
+  },
+  "keywords": [
+    "mochadoc",
+    "testing",
+    "unit-tests",
+    "documentation",
+    "doc-generation"
+  ],
+  "author": "Chris Stead",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/cmstead/mochadoc-runner/issues"
+  },
+  "homepage": "https://github.com/cmstead/mochadoc-runner#readme",
+  "dependencies": {
+    "mochadoc": "^0.9.3",
+    "signet": "^6.4.2"
+  }
+}
