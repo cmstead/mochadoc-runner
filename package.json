@@ -1,6 +1,6 @@
 {
   "name": "mochadoc-runner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mochadoc programmatic runner for tool-building",
   "main": "index.js",
   "scripts": {
