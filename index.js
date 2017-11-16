@@ -18,14 +18,16 @@ function callMochadoc(mochadocOptions, callback) {
         return result;
     }, []);
 
-    fork(runnerPath, args, function(err) {
+    const runnerProcess = fork(runnerPath, args);
+
+    runnerProcess.on('close', function(err) {
         const success = Boolean(err);
         const error = Boolean(err) 
             ? new Error('An error occurred while running Mochadoc: ' + err.message)
             : null;
 
         callback(error, success);
-    })
+    });
 }
 
 module.exports = signet.enforce(
